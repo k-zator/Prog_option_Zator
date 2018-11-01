@@ -46,6 +46,7 @@ ax.set_title('Potential Energy Surface for H2X')
 cset = ax.contour(X, Y, Z, zdir='z', offset=-76, cmap=cm.coolwarm)
 ax.view_init(40, 70)
 plt.savefig("Potential Energy Surface for H2X.jpg")
+plt.show()
 
 #finding an equilibrium geometry
 min_en = water[:,2].min()
